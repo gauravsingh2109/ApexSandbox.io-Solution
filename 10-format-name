@@ -1,7 +1,12 @@
 public String formatName(String firstName, String lastName) {
     //code here
     String res;
-    if(String.IsBlank(firstName) || String.IsBlank(lastName))
+    
+    if(String.IsBlank(firstName) && String.IsBlank(lastName))
+    {
+        res = '';
+    }
+    else if(String.IsBlank(firstName) || String.IsBlank(lastName))
     {
         if(String.IsBlank(firstName))
         {
@@ -12,11 +17,6 @@ public String formatName(String firstName, String lastName) {
            res = firstName; 
         }
     }
-    else if(String.IsBlank(firstName) && String.IsBlank(lastName))
-    {
-        res = 'xyz';
-    }
-    
     else 
     {
         res = lastName + ', '+ firstName;
