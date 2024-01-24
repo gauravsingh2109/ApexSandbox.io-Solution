@@ -1,0 +1,8 @@
+public String nameFromEmail(String email) {
+    //code here
+    String fname = email.substringBefore('.');
+    String lname = email.substringBetween('.', '@');
+    String res = fname.toLowerCase() + ' ' +lname.toLowerCase();
+    return res;
+    
+}
