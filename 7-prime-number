@@ -9,7 +9,7 @@ public Boolean isPrime(Integer num) {
             k = 0;
         }
     } 
-    if (k == 1)
+    if (k == 0)
     {
         res = false;
     } 
