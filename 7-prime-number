@@ -8,10 +8,6 @@ public Boolean isPrime(Integer num) {
         {
             k = 0;
         }
-        else
-        {
-            k = 1;
-        }
     } 
     if (k == 0)
     {
