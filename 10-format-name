@@ -14,7 +14,7 @@ public String formatName(String firstName, String lastName) {
     }
     else if(String.IsBlank(firstName) && String.IsBlank(lastName))
     {
-        res = null;
+        res = 'null';
     }
     
     else 
