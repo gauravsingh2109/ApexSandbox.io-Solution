@@ -1,0 +1,16 @@
+public Boolean isPrime(Integer num) {
+    //code here
+    Boolean res;
+    For( Integer i = 2 ; i < num ; i++)
+    {
+        if(Math.mod(num, i ) == 0) 
+        {
+            res = false;
+        }
+        else
+        {
+            res = true;
+        }
+    }
+    return res;
+}
