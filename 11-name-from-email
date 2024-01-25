@@ -4,7 +4,7 @@ public String nameFromEmail(String email) {
     String fname = email.substringBefore('.');
     String lname = email.substringBetween('.', '@');
     // Length of fname and lname.
-    Integer x = fname.lenght();
+    Integer x = fname.length();
     Integer y = lname.lenght();
     // First letter of fname and lname. 
     String f1 = fname.left(1);
