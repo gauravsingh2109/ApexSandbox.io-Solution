@@ -1,8 +1,29 @@
 public String nameFromEmail(String email) {
     //code here
+    // Pull out first name & last name.
     String fname = email.substringBefore('.');
     String lname = email.substringBetween('.', '@');
-    String res = fname.toLowerCase('tr') + ' ' +lname.toLowerCase('en');
+    // Length of fname and lname.
+    Integer x = fname.lenght();
+    Integer y = lname.lenght();
+    // First letter of fname and lname. 
+    String f1 = fname.left(1);
+    String l1 = lname.left(1);
+    // Capitalize first latter of fname and lname.
+    String ff = f1.toUpperCase();
+    String ll = l1.toUpperCase();
+    // Remaing letter of fname and lname.
+    String f2 = fname.right(x-1);
+    String l2 = lname.right(y-1);
+    // Lower case remaining letter of fname and lname.
+    String fr = f2.toLowerCase();
+    String lr = l2.toLowerCase();
+    //
+    
+
+    String res = ff+fr + ' ' + ll+lr; 
+
+
     return res;
     
 }
