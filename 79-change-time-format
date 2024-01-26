@@ -13,7 +13,7 @@ public String changeTimeFormat(String strTime) {
     }
     else if(x > 12 && x <= 23 )
     {
-       if(x>22)
+       if(x<22)
        {
          x = x-12;
          String h = String.valueOf(x);
