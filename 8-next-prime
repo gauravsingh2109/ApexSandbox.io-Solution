@@ -1,0 +1,19 @@
+public Integer nextPrime(Integer num) {
+    //code here
+    Integer k;
+    For( Integer i = num ; i < num ; i++)
+    {
+        if(Math.mod((num), i ) == 0) 
+        {
+            k = 0;
+        }
+    } 
+    if (k != 0)
+    {  
+        k = num;
+        
+    } 
+
+    return k;
+}
+    
