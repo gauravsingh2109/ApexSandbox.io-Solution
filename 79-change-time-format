@@ -13,17 +13,18 @@ public String changeTimeFormat(String strTime) {
     }
     else if(x > 12 && x <= 23 )
     {
-       if(x>10)
+       if(x>22)
        {
-         x = x;  
+         x = x-12;
+         String h = String.valueOf(x);
+         res = '0'+h + ':' + min + ' PM';  
        }
        else
        {
          x = x-12;
+         String h = String.valueOf(x);
+         res = h + ':' + min + ' PM';
        }
-       
-       String h = String.valueOf(x);
-       res = h + ':' + min + ' PM';
 
     }
     else if(x > 12 && x <= 23 )
