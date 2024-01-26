@@ -1,0 +1,13 @@
+public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    //code here
+    Boolean re;
+    if(a <= b && b <= c)
+    {
+        re = true;
+    }
+    else
+    {
+        re = false;
+    }
+    return re;
+}
