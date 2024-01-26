@@ -8,7 +8,7 @@ public Integer fibonacci(Integer n) {
     Integer num2 = 1;
         for (i = 0; i < N; i++) {
             // Print the number
-            res  =num1 + " ";
+            //res  =num1 + " ";
             num3 = num2 + num1;
             num1 = num2;
             num2 = num3;
