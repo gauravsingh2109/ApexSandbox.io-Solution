@@ -5,12 +5,13 @@ public String changeTimeFormat(String strTime) {
     String min = strTime.substringAfter(':');
     Integer x = Integer.valueOf(hour);
     Integer y = Integer.valueOf(min);
-    if(x >= 00 && x<= 12 )
+    if(x >= 00 && x<= 11 )
     {
+       
        res = hour + ':' + min + ' AM';
 
     }
-     if(x > 12 && x<= 23 )
+     if(x > 11 && x<= 23 )
     {
        res = hour + ':' + min + ' PM';
 
