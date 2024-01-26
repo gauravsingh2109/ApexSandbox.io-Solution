@@ -1,0 +1,22 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    //code here
+    String x;
+    if( (a+b) == c )
+    {
+      x = 'c';
+    }
+    else if( (b+c) == a )
+    {
+      x = 'a';
+    }
+    else if( (a+c) == b )
+    {
+      x = 'b';
+    }
+    else
+    {
+        x = '';
+    }
+
+    return x;
+}
