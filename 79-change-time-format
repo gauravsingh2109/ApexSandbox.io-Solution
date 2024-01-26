@@ -4,26 +4,26 @@ public String changeTimeFormat(String strTime) {
     String hour = strTime.substringBefore(':');
     String min = strTime.substringAfter(':');
     Integer x = Integer.valueOf(hour);
-    
+
     if(x >= 01 && x <= 11 )
     {
        
        res = hour + ':' + min + ' AM';
 
     }
-    if(x > 12  && x <= 23 )
+    else if(x > 12  && x <= 23 )
     {
        x= x- 12;
        res = 'x' + ':' + min + ' AM';
 
     }
     
-     if( x == 12 )
+    else if( x == 12 )
     {
        res = hour + ':' + min + ' PM';
 
     }
-    if( x == 00 )
+    else
     {  
        x = x + 12
        res = 'x' + ':' + min + ' PM';
