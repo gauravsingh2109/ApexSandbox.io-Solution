@@ -1,24 +1,22 @@
 public Integer nextPrime(Integer num) {
     //code here
     Integer k;
-    Integer y;
+    Integer flag;
     Integer res;
-    for (k = num; k < (num+10); k++ )
+    For( k = num; k> num; k++)
     {
-       For( Integer i = 2 ; i < num ; i++)
-      {
-        if(Math.mod(num, i ) == 0) 
+        For(Integer i = 2; i<k; i++)
         {
-            y = 0;
+            if(Math.mod(k,i) != 0)
+            {
+               flag = 1;
+            }
         }
-      } 
-      if (y != 0)
-      {
-        res = k ;
-      } 
     }
-
-    return res;
-    
+    if(flag == 1)
+    {
+        res = k;
+    }
+   return res; 
 }
     
