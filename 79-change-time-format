@@ -11,6 +11,13 @@ public String changeTimeFormat(String strTime) {
        res = hour + ':' + min + ' AM';
 
     }
+    if(x > 12 && x <= 23 )
+    {
+       x = x-12
+       res = hour + ':' + min + ' PM';
+
+    }
+    
     
 return res;    
 }
