@@ -7,12 +7,12 @@ public String changeTimeFormat(String strTime) {
     Integer y = Integer.valueOf(min);
     if(x >= 00 && x<= 11 )
     {
-       res = hour + ':' + min + 'AM';
+       res = hour + ':' + min + ' AM';
 
     }
      if(x > 11 && x<= 23 )
     {
-       res = hour + ':' + min + 'PM';
+       res = hour + ':' + min + ' PM';
 
     }
 return res;    
