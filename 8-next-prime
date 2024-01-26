@@ -1,19 +1,23 @@
 public Integer nextPrime(Integer num) {
     //code here
     Integer k;
-    For( Integer i = num ; i < num ; i++)
+    Integer y;
+    for (k = num; k < (num+10); k++ )
     {
-        if(Math.mod((num), i ) == 0) 
+       For( Integer i = 2 ; i < num ; i++)
+      {
+        if(Math.mod(num, i ) == 0) 
         {
-            k = 0;
+            y = 0;
         }
-    } 
-    if (k != 0)
-    {  
-        k = num;
-        
-    } 
+      } 
+      if (y != 0)
+      {
+        res = k ;
+      } 
+    }
 
     return k;
+    
 }
     
