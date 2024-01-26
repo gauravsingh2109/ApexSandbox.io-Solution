@@ -4,7 +4,7 @@ public String changeTimeFormat(String strTime) {
     String hour = strTime.substringBefore(':');
     String min = strTime.substringAfter(':');
     Integer x = Integer.valueOf(hour);
-    Integer y = Integer.valueOf(min);
+    
     if(x >= 01 && x <= 11 )
     {
        
