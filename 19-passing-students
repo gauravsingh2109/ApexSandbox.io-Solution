@@ -1,0 +1,55 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+    Boolean res;
+    if(passedExam == true)
+    {
+        if(passedAssignments == true)
+        {
+            res = true;
+        }
+        else if(passedProject == true)
+        {
+            res = true;
+        }
+        else
+        {
+            res = false;
+        }
+    }
+    else if(passedAssignments == true)
+    {
+        if(passedExam == true)
+        {
+            res = true;
+        }
+        else if(passedProject == true)
+        {
+            res = true;
+        }
+        else
+        {
+            res = false;
+        }
+      
+    }
+    else if(passedProject == true)
+    {
+        if(passedAssignments == true)
+        {
+            res = true;
+        }
+        else if(passedExam == true)
+        {
+            res = true;
+        }
+        else
+        {
+            res = false;
+        }
+    }
+    else
+    {
+       res =false;
+    }
+    return res;
+}
