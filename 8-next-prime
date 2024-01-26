@@ -12,6 +12,7 @@ public Integer nextPrime(Integer num) {
                flag = 1;
             }
         }
+        break;
     }
     if(flag == 1)
     {
