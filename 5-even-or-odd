@@ -1,0 +1,14 @@
+public String evenOrOdd(Integer num) {
+    //code here
+    String res;
+    if( math.mod(num,2) == 0 || num == 0)
+    {
+        res = 'even';
+    }
+    else
+    {
+        res = 'odd';
+    }
+
+    return res;
+}
