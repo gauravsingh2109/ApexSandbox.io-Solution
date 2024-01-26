@@ -1,4 +1,16 @@
 public String changeTimeFormat(String strTime) {
     //code here
+    String res;
+    String hour = strTime.substringBefore(':');
+    String min = strTime.substringAfter(':');
+    Integer x = Integer.valueOf(hour);
+
+    if(x >= 01 && x <= 11 )
+    {
+       
+       res = hour + ':' + min + ' AM';
+
+    }
     
+return res;    
 }
