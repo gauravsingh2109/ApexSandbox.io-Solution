@@ -23,7 +23,7 @@ public String changeTimeFormat(String strTime) {
        res = hour + ':' + min + ' PM';
 
     }
-    else
+    else 
     {  
        x = x + 12
        res = 'x' + ':' + min + ' PM';
