@@ -13,7 +13,7 @@ public Integer nextPrime(Integer num) {
             }
             
         }
-        res = k+1; 
+        res = k; 
         break;
     }
     
