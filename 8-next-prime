@@ -11,9 +11,9 @@ public Integer nextPrime(Integer num) {
             {
                flag = 1;
             }
-            
+          res = k;   
         }
-        res = k; 
+        
     }
     
    return res; 
