@@ -15,6 +15,7 @@ public Integer nextPrime(Integer num) {
         }
         res = k; 
         break;
+
     }
     
    return res; 
