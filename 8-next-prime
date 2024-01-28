@@ -5,15 +5,13 @@ public Integer nextPrime(Integer num) {
     Integer res;
     For( k = num; k < (num+100); k++)
     {
-        For(Integer i = 2; i<k; i++)
-        {
-            if(Math.mod(k,i) != 0)
+         For( Integer i = 2 ; i < num ; i++)
+        {  
+           if(Math.mod(k, i ) != 0) 
             {
-               flag = 1;
+              res = k;
             }
-            
-        }
-        res = k; 
+        } 
         break;
 
     }
