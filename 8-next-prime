@@ -1,7 +1,6 @@
 public Integer nextPrime(Integer num) {
     //code here
     Integer k;
-    Integer flag;
     Integer res;
     For( k = num; k < (num+100); k++)
     {
@@ -11,9 +10,10 @@ public Integer nextPrime(Integer num) {
             {
               res = k;
             }
+         res = k;
         } 
         break;
-
+    
     }
     
    return res; 
