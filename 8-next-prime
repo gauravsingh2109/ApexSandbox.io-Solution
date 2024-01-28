@@ -3,7 +3,7 @@ public Integer nextPrime(Integer num) {
     Integer k;
     Integer flag;
     Integer res;
-    For( k = num; k < (num+10); k++)
+    For( k = num; k < (num+100); k++)
     {
         For(Integer i = 2; i<k; i++)
         {
