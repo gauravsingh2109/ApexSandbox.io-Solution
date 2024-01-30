@@ -3,17 +3,18 @@ public Integer nextPrime(Integer num) {
     Integer k;
     Integer l;
     Integer res;
+    Boolean b;
     For( k = num; k > num; k++)
     {
         for( l = 2; l< k; l++)
         {
             if(Math.mod(k,l) != 0)
             {
-                res = k;
+                b = true;
             }
-            break;
+            
         }
-    
+      res = k;
     }
     
    return res; 
