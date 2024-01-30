@@ -1,18 +1,18 @@
 public Integer nextPrime(Integer num) {
     //code here
     Integer k;
+    Integer l;
     Integer res;
-    For( k = num; k < (num+100); k++)
+    For( k = num; k > num; k++)
     {
-         For( Integer i = 2 ; i < k ; i++)
-        {  
-           if(Math.mod(k, i ) != 0) 
+        for( l = 2; l< k; l++)
+        {
+            if(Math.mod(k,l) != 0)
             {
-              res = k;
+                res = k;
             }
-         res = k;
-        } 
-        break;
+            break;
+        }
     
     }
     
