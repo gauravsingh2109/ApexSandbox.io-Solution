@@ -1,11 +1,11 @@
 public String reverseWordsInASentence(String sentence){
     //Convert the string to a list of characters
-    List<String> strList = New List<String>(sentence.split(' '));
+    List<Character> charList = New List<Character>(sentence.toCharArray());
     // reverse the list
-    strList.reverse(); 
+    charList.reverse(); 
 
     //Join the characters back into a string
 
-    String rev = String.join(strList, ' ');
+    String rev = String.join(charList, '');
     return rev;
 }
