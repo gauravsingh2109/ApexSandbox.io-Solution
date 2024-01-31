@@ -5,7 +5,7 @@ public Integer nextPrime(Integer num) {
     integer x;
     Integer res;
     Boolean b;
-    For( k = num; k > num; k++)
+    For( k = num; k+1 > num; k++)
     {
         for( l = 2; l< k; l++)
         {
