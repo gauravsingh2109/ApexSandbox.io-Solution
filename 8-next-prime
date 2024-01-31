@@ -2,6 +2,7 @@ public Integer nextPrime(Integer num) {
     //code here
     Integer k;
     Integer l;
+    integer x;
     Integer res;
     Boolean b;
     For( k = num; k > num; k++)
@@ -11,10 +12,15 @@ public Integer nextPrime(Integer num) {
             if(Math.mod(k,l) != 0)
             {
                 b = true;
+                if(b==true)
+                {
+                    res= k;
+                }
+                
             }
             
         }
-      res = k;
+    
     }
     
    return res; 
