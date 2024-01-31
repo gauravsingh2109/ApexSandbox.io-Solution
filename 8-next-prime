@@ -9,6 +9,7 @@ public Integer nextPrime(Integer num) {
         }
         num++;
     }
+    return num;
 
 }
 
