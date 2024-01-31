@@ -1,5 +1,21 @@
 public String reverseWordsInASentence(String sentence){
 // reverse the sentence
+String s;
+if(sentence == null || sentence == ' ')
+{
+   if(sentence == null)
+   {
+       s = null;
+       return s;
+   }
+   else
+   {
+      s = ' ';
+       return s;
+   }
+}
+else
+{
 String res = sentence.reverse();
 String str1;
 //List for storing words of reverse String
@@ -13,7 +29,10 @@ For(String str: words)
     str1 = str.reverse();
     newWords.add(str1);
 }
-String s = String.join(newWords, ' ');
+s = String.join(newWords, ' ');
+return s;
 
-return s;  
+}
+
+  
 }
