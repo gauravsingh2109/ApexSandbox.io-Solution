@@ -1,13 +1,14 @@
 public String reverseWordsInASentence(String sentence){
-    //Convert the string to a list of string
-    List<String> words = New List<String>(sentence.split(' '));
-    // reverse the list
-    words.reverse(); 
+   
 
     // reverse each word individualy
       
     for(Integer i = 0; i<=words.size(); i++)
     {
+         //Convert the string to a list of string
+        List<String> words = New List<String>(sentence.split(' '));
+        // reverse the list
+         words.reverse(); 
         List<Character> charList = New List<Character> (words[i].toCharArray());
         charList.reverse();
         words[i] = String.join(charList, ''); 
