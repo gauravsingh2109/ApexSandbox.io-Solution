@@ -1,28 +1,31 @@
 public Integer nextPrime(Integer num) {
     //code here
-    Integer k;
-    Integer l;
-    integer x;
-    Integer res;
-    Boolean b;
-    For( k = num; k>= num; k++)
+    num++;
+    while(true)
     {
-        for( l = 2; l< k; l++)
+        if(IsPrime(num))
         {
-            if(Math.mod(k,l) != 0)
-            {
-                b = true;
-                if(b==true)
-                {
-                    res= k;
-                }
-                
-            }
-            
+            return num;
         }
-    
+        num++;
     }
-    
-   return res; 
+
+}
+
+public Boolean IsPrime(Integer n)
+{
+    if(n<=1)
+    {
+        return false;
+    }
+    for(Integer i = 2; i<n; i++)
+    {
+        if(Math.mod(n, i) == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+
 }
     
