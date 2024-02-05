@@ -3,6 +3,7 @@ public Id insertStudent(String name, String email) {
     apxio__Student__c S = New apxio__Student__c();
     S.Name = name;
     S.apxio__Email__c = email;
+    Insert S;
     
     return S.id;
 }
