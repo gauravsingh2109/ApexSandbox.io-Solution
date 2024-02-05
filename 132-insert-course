@@ -1,6 +1,6 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    apxio__Credits__c C = New apxio__Credits__();
+    apxio__Course__c C = New apxio__Course__c();
     C.Name  = name;
     C.apxio__Course_Details__c  = details;
     C.apxio__Credits__c = credits;
