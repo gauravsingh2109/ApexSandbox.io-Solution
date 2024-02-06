@@ -11,7 +11,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     else
     {
         C.apxio__Credits__c = null;
-        Insert C;
+    
     }
     
     
