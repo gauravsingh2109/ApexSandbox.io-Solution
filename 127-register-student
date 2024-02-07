@@ -10,8 +10,8 @@ public String registerStudent(String name, String phone, String email) {
     Insert S;
     If(S.apxio__Registration_Number__c != Null)
     {
-        res= null;
-        return res;
+        res = null;
+       // return res;
     }
     
   return res;
