@@ -7,9 +7,9 @@ public String registerStudent(String name, String phone, String email) {
     S.apxio__Email__c = email;
    
    Insert S;
-   if(S.id != Null)
+   if(S.apxio__Registration_Number__c != Null;)
    {
-       S.apxio__Registration_Number__c = Null;
+       
        res = null;
    }
    return res;
