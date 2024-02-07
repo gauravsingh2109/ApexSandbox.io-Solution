@@ -1,11 +1,17 @@
 public String registerStudent(String name, String phone, String email) {
     // code here
+    String res;
     apxio__Student__c S = New apxio__Student__c();
     S.Name = name;
     S.apxio__Phone__c = phone;
     S.apxio__Email__c = email;
    
    Insert S;
-   return null;
+   if(S.id != false)
+   {
+       S.apxio__Registration_Number__c = Null;
+       res = null;
+   }
+   return res;
     
 }
