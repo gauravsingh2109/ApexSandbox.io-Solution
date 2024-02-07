@@ -7,13 +7,12 @@ public String registerStudent(String name, String phone, String email) {
     S.apxio__Email__c = email;
    
    Insert S;
-
-   if(S.apxio__Registration_Number__c != Null)
+   List<String> RNL;
+   For(apxio__Student__c ES: [Select id, apxio__Registration_Number__c from apxio__Student__c])
    {
-       
-       res = null;
+     RNL.Add(apxio__Registration_Number__c);
    }
 
-   return res;
+   return RNL;
     
 }
