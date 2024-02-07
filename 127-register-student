@@ -10,7 +10,7 @@ public String registerStudent(String name, String phone, String email) {
    List<String> RNL;
    For(apxio__Student__c ES: [Select id, apxio__Registration_Number__c from apxio__Student__c])
    {
-     RNL.Add(apxio__Registration_Number__c);
+     RNL.Add(ES.apxio__Registration_Number__c);
    }
 
    return RNL;
