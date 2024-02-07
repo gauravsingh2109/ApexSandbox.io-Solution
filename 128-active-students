@@ -1,12 +1,15 @@
 public List<apxio__Student__c> selectActiveStudents() {
     // code here
     List<apxio__Student__c> SL  = [Select apxio__Active__c from apxio__Student__c];
-    For(apxio__Student__c ES :SL )
+    For(Intehgr i = 0; I< SL.size(); i++ )
     {
-        If(SL.apxio__Active__c == true)
+        if(SL.apxio__Active__c)
         {
-            SL.Add(ES.apxio__Active__c);
+            return SL.get(i);
         }
-      return SL;
+        else
+        {
+            return SL.get(i);
+        }
     }
 }
