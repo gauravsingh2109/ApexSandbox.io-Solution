@@ -4,9 +4,20 @@ public String registerStudent(String name, String phone, String email) {
     S.Name = name;
     S.apxio__Phone__c = phone;
     S.apxio__Email__c = email;
+    Strring res;
    // S.apxio__Registration_Number__c = Null;
 
     Insert S;
+    If(S.apxio__Registration_Number__c != Null)
+    {
+        res= null;
+        return res;
+    }
+    else
+    {
+      res = S.apxio__Registration_Number__c;
+      return res;
+    }
 
-    return S.apxio__Registration_Number__c;
+    
 }
