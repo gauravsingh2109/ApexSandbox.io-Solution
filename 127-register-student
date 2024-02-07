@@ -7,8 +7,8 @@ public String registerStudent(String name, String phone, String email) {
     S.apxio__Email__c = email;
    
    Insert S;
-   List<apxio__Student__c> ES= [Select id, apxio__Registration_Number__c from apxio__Student__c];
+   S = [Select apxio__Registration_Number__c from apxio__Student__c where id=:S.id];
   
-   return ES.apxio__Registration_Number__c;
+   return S.apxio__Registration_Number__c;
     
 }
