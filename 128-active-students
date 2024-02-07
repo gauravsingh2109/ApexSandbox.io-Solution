@@ -1,7 +1,7 @@
 public List<apxio__Student__c> selectActiveStudents() {
     // code here
     List<apxio__Student__c> SL  = [Select apxio__Active__c from apxio__Student__c];
-    For(Intehgr i = 0; I< SL.size(); i++ )
+    For(Integer i = 0; I< SL.size(); i++ )
     {
         if(SL.apxio__Active__c)
         {
