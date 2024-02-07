@@ -6,5 +6,5 @@ public String registerStudent(String name, String phone, String email) {
     S.apxio__Email__c = email;
 
     Insert S;
-    return apxio__Registration_Number__c;
+    return S.apxio__Registration_Number__c;
 }
