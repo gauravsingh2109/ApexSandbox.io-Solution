@@ -13,11 +13,7 @@ public String registerStudent(String name, String phone, String email) {
         res= null;
         return res;
     }
-    else
-    {
-      res = S.apxio__Registration_Number__c;
-      return res;
-    }
+    
 
     
 }
