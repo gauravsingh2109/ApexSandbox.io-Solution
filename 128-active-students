@@ -5,7 +5,7 @@ public List<apxio__Student__c> selectActiveStudents() {
     {
         If(SL.apxio__Active__c == true)
         {
-            SL.Add(ES.apxio__Active__c)
+            SL.Add(ES.apxio__Active__c);
         }
       return SL;
     }
