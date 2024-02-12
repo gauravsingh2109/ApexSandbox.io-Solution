@@ -1,8 +1,9 @@
 public Id classFromCourse(String courseName) {
     // code here
     apxio__Class__c C = New apxio__Class__c();
+     C.Name = courseName;
     C.apxio__Course__c = courseName;
-    C.Name = courseName;
+   
 
     Insert C;
 
