@@ -6,10 +6,14 @@ public void enrollStudents(List<String> emails, String className) {
 
     For(apxio__Student__c ES: SL)
     {
-        apxio__Class_Enrollment__c CE = New apxio__Class_Enrollment__c();
-        CE.apxio__Student__c = ES.Name;
-        CE.apxio__Offered_Class__c = CL.Name;
-        CEL.add(CE);
+        for(apxio__Class__c EC : CL)
+        {
+          apxio__Class_Enrollment__c CE = New apxio__Class_Enrollment__c();
+          CE.apxio__Student__c = ES.Name;
+          CE.apxio__Offered_Class__c = CL.Name;
+          CEL.add(CE);
+        }
+        
     }
     Insert CEL;
 }
