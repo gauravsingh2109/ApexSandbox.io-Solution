@@ -6,7 +6,7 @@ public Id classFromCourse(String courseName) {
 
     Insert C;
    
-    List<apxio__Course__c>  CL = [Select Id, Name, apxio__Course__c.apxio__Class__c from apxio__Class__c];
+    List<apxio__Class__c>  CL = [Select Id, Name, apxio__Course__c.apxio__Class__c from apxio__Class__c];
 
     Return CL.Id;
 
