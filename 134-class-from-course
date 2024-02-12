@@ -2,11 +2,11 @@ public Id classFromCourse(String courseName) {
     // code here
     apxio__Class__c C = New apxio__Class__c();
      C.Name = courseName;
-    C.apxio__Course__c = courseName;
-   
+     C.apxio__Course__c = courseName;
 
     Insert C;
-
+   
+    C = [Select Id, Name,apxio__Course__c from apxio__Class__c ]
 
     Return C.Id;
 
