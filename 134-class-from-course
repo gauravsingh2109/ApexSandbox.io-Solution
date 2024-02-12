@@ -1,13 +1,19 @@
 public Id classFromCourse(String courseName) {
     // code here
-    apxio__Class__c C = New apxio__Class__c();
-     C.Name = courseName;
-     C.apxio__Course__c = courseName;
+    List<apxio__Course__c> CL = [Select Id, Name From apxio__Course__c where Name=:courseName Limit 1];
 
-    Insert C;
-   
-    List<apxio__Class__c>  CL = [Select Id, Name, apxio__Class__c.apxio__Course__c from apxio__Class__c];
+    if(CL.size()== 0)
+    {
+        return null;
+    }
+    else
+    {
+       apxio__Class__c C = New apxio__Class__c();
+       C.Name = CL[0].Name;
+       C.apxio__Course__c = CL[0.Id];
+       Insert C;
 
-    Return CL.Id;
+       Return C.Id;
+    }
 
 }
