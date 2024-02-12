@@ -11,7 +11,7 @@ public void createCourseAndClass(String name, String description) {
     CL.Name = name;
     if(description != null)
     {
-      CL.apxio__Description__c  = description.left(254);
+      CL.apxio__Description__c  = description.left(255);
     }
     if(description == null)
     {
