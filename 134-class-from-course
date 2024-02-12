@@ -6,7 +6,7 @@ public Id classFromCourse(String courseName) {
 
     Insert C;
    
-    C = [Select Id, Name,apxio__Course__c from apxio__Class__c ]
+    C = [Select Id, Name,apxio__Course__c from apxio__Class__c ];
 
     Return C.Id;
 
