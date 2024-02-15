@@ -2,7 +2,7 @@ public Boolean isTypeAccount(sObject record)
 {
     // code here
     Boolean res;
-    record A = New record();
+    sObject record = New sObject();
     if(instanceof record)
     {
         res = true;
