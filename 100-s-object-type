@@ -1,15 +1,17 @@
 public Boolean isTypeAccount(sObject record)
-{ 
+{
+    // code here
     Boolean res;
-    if(record == Account)
+    Account A = New Account();
+    if(record.get(0) instanceof Account )
     {
-        Account A  = New Account(name);
-        A.Name = name;
-        return res = true;
+        res = true;
     }
     else
     {
-        return res  =false;
+        res = false;
     }
-    // code here
+
+  return res;
+    
 }
