@@ -3,7 +3,7 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Boolean res;
     Account record = New Account();
-    if(record instanceof Account)
+    if(record.id instanceof Account)
     {
         res = true;
     }
