@@ -3,34 +3,16 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Boolean res;
     List<sObject> A = New List<sObject>();
-    if(record == 'acc')
+    record = New Account();
+    A.add(record);
+    if(A.get(0) instanceof Account)
     {
-      record = New Account();
-      A.add(record);
-      if(A.get(0) instanceof Account)
-      {
         res = true;
-      }
     }
-    if(record == 'con')
+    if(A.get(0) instanceof Contact)
     {
-         record = New Contact();
-         A.add(record);
-         if(A.get(0) instanceof Contact)
-         {
-           res = false;
-         }
+        res = false;
     }
-    if(record == Null)
-    {
-         record = New Account();
-         A.add(record);
-         if(A.get(0) instanceof Account)
-         {
-           res = false;
-         }
-    }
-    
     
     return res;
 }
