@@ -5,6 +5,8 @@ public Boolean isTypeAccount(sObject record)
     List<sObject> A = New List<sObject>();
     record = New Account();
     A.add(record);
+    record = New Contact();
+    A.add(record);
     if(A.get(0) instanceof Account)
     {
         res = true;
