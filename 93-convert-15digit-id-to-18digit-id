@@ -1,0 +1,11 @@
+public String convert15to18DigitId(String fifteenDigit)
+{
+    String res;
+    //code here
+    if(Id i <=15)
+    {
+        res= '-1';
+    }
+    
+    return res;
+}
