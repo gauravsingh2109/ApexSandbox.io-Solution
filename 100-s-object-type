@@ -2,8 +2,8 @@ public Boolean isTypeAccount(sObject record)
 {
     // code here
     Boolean res;
-    Account A = New Account();
-    if(record.get(0) instanceof Account )
+    record A = New record();
+    if(instanceof record)
     {
         res = true;
     }
