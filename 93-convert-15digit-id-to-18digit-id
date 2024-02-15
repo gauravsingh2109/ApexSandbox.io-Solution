@@ -1,12 +1,17 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
     String res;
+    String eighteenDigit;
     Integer i = fifteenDigit.Length();
     //code here
     
-    if( i <=15)
+    if( i < 15)
     {
         res= '-1';
+    }
+    if( i == 15)
+    {
+      res = fifteenDigit;
     }
     
     return res;
