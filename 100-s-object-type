@@ -9,7 +9,7 @@ public Boolean isTypeAccount(sObject record)
     {
         res = true;
     }
-    if(A.get(0) instanceof Contact)
+    else
     {
         res = false;
     }
