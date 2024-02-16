@@ -3,14 +3,20 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Boolean res;
     List<sObject> SO = New List<sObject>();
-   if(record =='account')
-   {
-        res= true;
-   }
-   else
-   {
-       res = false ;
-   }
+    record = New Account();
+    if(record = New Account())
+    {
+      SO.add(record);
+      if(SO.get(0) instanceof Account)
+      {
+        res = true;
+      }  
+    }
+    
+    else
+    {
+        res = false;
+    }
     
     return res;
 }
