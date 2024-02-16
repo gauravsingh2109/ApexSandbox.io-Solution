@@ -12,11 +12,19 @@ public Boolean isTypeAccount(sObject record)
         res = true;
       }  
     }
-    
-    else
+    if(record == New Contact())
     {
+       SO.add(record);
+      if(SO.get(0) instanceof Account)
+      {
         res = false;
+      } 
     }
-    
+    if(record == Null)
+    {
+       
+        res = false;
+      
+    }
     return res;
 }
