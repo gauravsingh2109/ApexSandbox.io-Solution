@@ -3,7 +3,7 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Boolean res;
     List<sObject> SO = New List<sObject>();
-    record = New Account();
+    record = New sObject();
     SO.add(record);
     if(SO.get(0) instanceof Account)
     {
