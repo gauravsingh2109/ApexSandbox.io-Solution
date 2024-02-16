@@ -15,7 +15,7 @@ public Boolean isTypeAccount(sObject record)
     if(record == New Contact())
     {
        SO.add(record);
-      if(SO.get(0) instanceof Account)
+      if(SO.get(0) instanceof Contact)
       {
         res = false;
       } 
