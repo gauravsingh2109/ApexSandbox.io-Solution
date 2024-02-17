@@ -2,18 +2,20 @@ public String convert15to18DigitId(String fifteenDigit)
 {
     String res; 
     Id ids;
-   // String eighteenDigit = String.valueOf(ids);
     Integer i = fifteenDigit.Length();
-    //code here
-   ids =  Id.valueOf(fifteenDigit, true);
+ 
     if( i < 15)
     {
         res= '-1';
     }
-    if( i == 15)
+    if( i == Null)
     {
-      res = ids;
+      res = Null;
     }
-    
+    if(i>15)
+    {
+        ids = Id.valueOf(fifteenDigit);
+        res = String.valueOf(ids);
+    }
     return res;
 }
