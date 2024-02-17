@@ -8,7 +8,7 @@ public String convert15to18DigitId(String fifteenDigit)
     {
         res= '-1';
     }
-    if( i == 0)
+    if( fifteenDigit == Null)
     {
       res = Null;
     }
