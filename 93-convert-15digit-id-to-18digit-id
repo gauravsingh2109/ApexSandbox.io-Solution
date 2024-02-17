@@ -1,7 +1,7 @@
 public String convert15to18DigitId(String fifteenDigit)
 {
     String res; 
-    Id ids = Id.valueOf(fifteenDigit);
+    Id ids;
     String eighteenDigit = String.valueOf(ids);
     Integer i = fifteenDigit.Length();
     //code here
