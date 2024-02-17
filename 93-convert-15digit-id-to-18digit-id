@@ -15,7 +15,7 @@ public String convert15to18DigitId(String fifteenDigit)
     }
     if(fifteenDigit == Null)
     {
-       res = Null; 
+       res = fifteenDigit; 
     }
     return res;
 }
