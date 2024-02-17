@@ -8,11 +8,11 @@ public String convert15to18DigitId(String fifteenDigit)
     {
         res= '-1';
     }
-    if( fifteenDigit == Null)
+    else if( fifteenDigit == Null)
     {
       res = Null;
     }
-    if(fifteenDigit.Length() > 15)
+    else
     {
         ids = Id.valueOf(fifteenDigit);
         res = String.valueOf(ids);
