@@ -8,7 +8,7 @@ public String divide(Integer a, Integer b){
     }
     else
     {
-        res = tring.valueof(div);
+        res = String.valueof(div);
     }
 
     return res;
