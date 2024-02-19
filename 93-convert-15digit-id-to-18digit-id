@@ -24,7 +24,7 @@ public String convert15to18DigitId(String fifteenDigit)
    if(fifteenDigit.length()==null)
    {
          ids = null;
-        res = null;
+        res = ''+null;
     
    }
    
