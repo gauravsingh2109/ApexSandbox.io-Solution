@@ -6,7 +6,7 @@ public String divide(Integer a, Integer b){
     {
         res = 'Divide by '+String.valueof(b);
     }
-    else
+    else if(a != Null && b!= Null && b!= 0)
     {
         res = String.valueof(div);
     }
