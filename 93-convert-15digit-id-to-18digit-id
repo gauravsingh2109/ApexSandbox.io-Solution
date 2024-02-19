@@ -16,7 +16,10 @@ public String convert15to18DigitId(String fifteenDigit)
         ids = Id.valueOf(fifteenDigit);
         res = String.valueOf(ids);
     }
-    
+    if(String.IsBlank(fifteenDigit) == true)
+    {
+       res = fifteenDigit; 
+    }
    }
    if(fifteenDigit.length()==null)
    {
