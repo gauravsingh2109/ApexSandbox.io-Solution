@@ -20,6 +20,12 @@ public String convert15to18DigitId(String fifteenDigit)
        res = fifteenDigit; 
     }
    }
+   if(fifteenDigit.length()==null)
+   {
+         ids = Id.valueOf(fifteenDigit);
+        res = String.valueOf(ids);
+    
+   }
    
 
     return res;
