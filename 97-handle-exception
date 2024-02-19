@@ -10,6 +10,10 @@ public String divide(Integer a, Integer b){
     {
         res = String.valueof(div);
     }
+    else if(a == Null)
+    {
+        res= 'Attempt to de-reference a null object';
+    }
 
     return res;
 }
