@@ -2,7 +2,7 @@ public String divide(Integer a, Integer b){
     //code here
     String res;
     Integer div = a/b;
-    if(a !=Null && b==0)
+    if(a >0 && b==0)
     {
         res = 'Divide by 0';
     }
