@@ -2,9 +2,9 @@ public String divide(Integer a, Integer b){
     //code here
     String res;
     Integer div = a/b;
-    if(b==0)
+    if(a !=Null && b==0)
     {
-        res = 'Divide by '+String.valueof(b);
+        res = 'Divide by 0';
     }
     else if(a != Null && b!= Null && b!= 0)
     {
