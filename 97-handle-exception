@@ -2,18 +2,28 @@ public String divide(Integer a, Integer b){
     //code here
     String res;
     Integer div = a/b;
-    if(a >0 && b==0)
-    {
-        res = 'Divide by 0';
+   try
+   {
+       if(a > 0 && b>0)
+       {
+           res = String.valueof(div);
+       }
+
     }
-    else if(a != Null && b!= Null && b!= 0)
+    catch(Exception E)
     {
-        res = String.valueof(div);
-    }
-    else if(a == Null && b!= Null)
-    {
-        res= 'Attempt to de-reference a null object';
+        if(a == Null)
+        {
+            res = E.getMessage();
+        }
+        if(b== Null)
+        {
+            res = E.getMessage();
+        }
+        if(b== 0)
+        {
+            res = E.getMessage();
+        }
     }
 
-    return res;
 }
