@@ -12,7 +12,7 @@ public String divide(Integer a, Integer b){
        
 
     }
-    catch(Exception e)
+    catch(NullPointerException e)
     {
         if(a == Null && b>0)
         {
