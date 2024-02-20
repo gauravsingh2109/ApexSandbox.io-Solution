@@ -6,7 +6,11 @@ public String divide(Integer a, Integer b){
    {
        if(a > 0 && b>0)
        {
-           res = String.valueof(div);
+           try
+           {
+              res = String.valueof(div);
+           }
+           
        }
 
     }
