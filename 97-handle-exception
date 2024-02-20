@@ -4,15 +4,14 @@ public String divide(Integer a, Integer b){
     Integer div = a/b;
    try
    {
-        res = String.valueof(div);
+        return String.valueof(div);
     
     }
     catch(Exception e)
     {
       
-        res = e.getMessage();
+        return e.getMessage();
        
     }
-  
-  return res;
+
 }
