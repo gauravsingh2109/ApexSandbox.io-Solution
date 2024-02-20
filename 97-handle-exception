@@ -4,13 +4,8 @@ public String divide(Integer a, Integer b){
     Integer div = a/b;
    try
    {
-       if(a > 0 && b>0)
-       {
-          res = String.valueof(div);
-              
-       }
-       
-
+        res = String.valueof(div);
+    
     }
     catch(Exception e)
     {
