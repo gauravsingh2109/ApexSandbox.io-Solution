@@ -13,15 +13,15 @@ public String divide(Integer a, Integer b){
     }
     catch(Exception E)
     {
-        if(a == Null)
+        if(a == Null && b>0)
         {
             res = E.getMessage();
         }
-        if(b== Null)
+        if(b== Null && a>0)
         {
             res = E.getMessage();
         }
-        if(b== 0)
+        if(b== 0 && a>0)
         {
             res = E.getMessage();
         }
