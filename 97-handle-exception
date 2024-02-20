@@ -19,11 +19,11 @@ public String divide(Integer a, Integer b){
         }
         if(b== Null && a>0)
         {
-            res = E.getMessage();
+            res = ''+E.getMessage();
         }
         if( b== 0 && a>0 )
         {
-            res = E.getMessage();
+            res = ''+E.getMessage();
         }
     }
   
