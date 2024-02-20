@@ -14,18 +14,9 @@ public String divide(Integer a, Integer b){
     }
     catch(Exception e)
     {
-        if(a == Null && b>0)
-        {
-            res = e.getMessage();
-        }
-        if(b == Null && a>0)
-        {
-            res = e.getMessage();
-        }
-        if( b== 0 && a>0 )
-        {
-            res = e.getMessage();
-        }
+      
+        res = e.getMessage();
+       
     }
   
   return res;
