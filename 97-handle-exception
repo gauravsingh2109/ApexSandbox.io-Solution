@@ -17,7 +17,7 @@ public String divide(Integer a, Integer b){
         {
             res = ''+E.getMessage();
         }
-        if(b== Null && a>0)
+        if(b == Null && a>0)
         {
             res = ''+E.getMessage();
         }
