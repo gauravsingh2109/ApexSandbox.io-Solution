@@ -9,21 +9,22 @@ public String divide(Integer a, Integer b){
           res = String.valueof(div);
               
        }
+       
 
     }
-    catch(Exception E)
+    catch(Exception e)
     {
         if(a == Null && b>0)
         {
-            res = ''+E.getMessage();
+            res = e.getMessage();
         }
         if(b == Null && a>0)
         {
-            res = ''+E.getMessage();
+            res = e.getMessage();
         }
         if( b== 0 && a>0 )
         {
-            res = ''+E.getMessage();
+            res = e.getMessage();
         }
     }
   
