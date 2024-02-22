@@ -13,6 +13,8 @@ public List<Account> checkAccounts(List<Account> accounts)
            throw New AccountException('Invalid BillingCity');
        }
    }
+
+   return accounts;
     
 }
 
