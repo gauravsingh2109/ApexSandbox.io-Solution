@@ -1,14 +1,7 @@
 public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
    // Code here
-   
-   For(Account EA: accounts.get(0))
-   {
 
-     //  If(EA.BillingCity != Null)
-       //{
-           EA.BillingCity = EA?.BillingCity;
-           return EA.BillingCity.toUpperCase();
-  }
-       
+        String res = accounts.get(0)?.BillingCity;
+        return res;
    
 }
