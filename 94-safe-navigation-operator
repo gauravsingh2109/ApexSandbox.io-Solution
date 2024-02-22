@@ -6,9 +6,9 @@ public String getAccountBillingCityWithSafeNavigation(List<Account> accounts){
 
      //  If(EA.BillingCity != Null)
        //{
-           EA.BillingCity = EA.BillingCity?.toUpperCase();
-           return EA.BillingCity;
-      // }
+           EA.BillingCity = EA?.BillingCity;
+           return EA.BillingCity.toUpperCase();
+  }
        
    
 }
