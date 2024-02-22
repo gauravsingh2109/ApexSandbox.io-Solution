@@ -3,7 +3,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     // code here 
     if(accounts == Null)
     {
-        throw New IllegalArgumentException('accounts should not be null';)
+        throw New IllegalArgumentException('accounts should not be null');
     }
    
    for(Account EA: accounts)
