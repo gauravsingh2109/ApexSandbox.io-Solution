@@ -1,0 +1,23 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here 
+    if(accounts == Null)
+    {
+        throw New IllegalArgumentException('accounts should not be null';)
+    }
+   
+   for(Account EA: accounts)
+   {
+       if(EA.BillingCity == Null )
+       {
+           throw New AccountException('Invalid BillingCity');
+       }
+   }
+    
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception 
+{
+
+}
